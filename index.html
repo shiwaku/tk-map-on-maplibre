@@ -43,7 +43,7 @@
         // マップの初期化
         const map = new maplibregl.Map({
             container: 'map',
-            style: 'skeleton.json',
+            style: 'style.json',
             zoom: 13.09,
             minZoom: 1,
             maxZoom: 23,
@@ -151,60 +151,6 @@
 
             // 標高タイルセット
             // map.setTerrain({ 'source': 'aist-dem-terrain-rgb', 'exaggeration': 1 });
-
-            // 都市計画決定GISソース
-            map.addSource("tokei-gis", {
-                type: "vector",
-                url: "pmtiles://https://shiworks.xsrv.jp/pmtiles-data/mlit/toshik/a.pmtiles",
-                attribution: '<a href="https://www.mlit.go.jp/toshi/tosiko/toshi_tosiko_tk_000087.html">都市計画決定GISデータ（国土交通省）を加工して作成</a>',
-                generateId: true
-            });
-
-            // 都市計画決定GIS（用途地域）ポリゴンレイヤ
-            map.addLayer({
-                "id": 'youto',
-                "source": "tokei-gis",
-                "source-layer": "youto",
-                "type": "fill",
-                minzoom: 1,
-                maxzoom: 23,
-                "paint": {
-                    "fill-color": [
-                        "match",
-                        ["get", "用途地域"],
-                        "第１種低層住居専用地域", "rgb(0, 178, 133)", // 第一種低層住居専用地域
-                        "第２種低層住居専用地域", "rgb(145, 207, 185)", // 第二種低層住居専用地域
-                        "第１種中高層住居専用地域", "rgb(120, 206, 63)", // 第一種中高層住居専用地域
-                        "第２種中高層住居専用地域", "rgb(173, 223, 33)", // 第二種中高層住居専用地域
-                        "第１種住居地域", "rgb(235, 238, 94)", // 第一種住居地域
-                        "第２種住居地域", "rgb(255, 210, 182)", // 第二種住居地域
-                        "準住居地域", "rgb(255, 166, 56)", // 準住居地域
-                        "近隣商業地域", "rgb(255, 176, 195)", // 近隣商業地域
-                        "商業地域", "rgb(255, 89, 61)", // 商業地域
-                        "準工業地域", "rgb(167, 148, 197)", // 準工業地域
-                        "工業地域", "rgb(185, 234, 255)", // 工業地域
-                        "工業専用地域", "rgb(95, 197, 251)", // 工業専用地域
-                        "田園住居地域", "rgb(196, 215, 155)", // 田園住居地域
-                        '#333'
-                    ],
-                    'fill-opacity': 0.5,
-                    'fill-outline-color': 'rgba(255, 0, 0, 0)'
-                },
-            });
-
-            // 都市計画決定GIS（都市計画道路）ラインレイヤ
-            map.addLayer({
-                "id": 'douro',
-                "source": "tokei-gis",
-                "source-layer": "douro",
-                "type": "line",
-                "minzoom": 1,
-                "maxzoom": 23,
-                "paint": {
-                    "line-color": 'rgba(0, 0, 0, 1)',
-                    "line-width": 1
-                }
-            });
 
             // 役場ソース
             map.addSource('town-hall', {
