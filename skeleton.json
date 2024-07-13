@@ -29,7 +29,7 @@
       "source-layer": "AdmArea",
       "paint": {
         "fill-color": "rgba(255,255,255,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -40,7 +40,7 @@
       "source-layer": "WA",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -51,7 +51,7 @@
       "source-layer": "TpgphArea",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -63,7 +63,7 @@
       "filter": ["in", ["get", "vt_flag17"], ["literal", [1, 2]]],
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -72,7 +72,7 @@
       "source": "v",
       "source-layer": "Cstline",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -82,7 +82,7 @@
       "source": "v",
       "source-layer": "RvrCL",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -92,7 +92,7 @@
       "source": "v",
       "source-layer": "WL",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -104,7 +104,7 @@
       "filter": ["==", ["geometry-type"], "Polygon"],
       "paint": {
         "fill-color": "rgba(255,255,255,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -114,7 +114,7 @@
       "source-layer": "WRltLine",
       "filter": ["==", ["geometry-type"], "LineString"],
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -138,7 +138,7 @@
       "source": "v",
       "source-layer": "AdmBdry",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -148,7 +148,7 @@
       "source": "v",
       "source-layer": "Cntr",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -170,7 +170,7 @@
         "text-field": ["get", "vt_alti"]
       },
       "paint": {
-        "text-color": "rgba(0,0,0,1)"
+        "text-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -179,7 +179,7 @@
       "source": "v",
       "source-layer": "Isbt",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -201,7 +201,7 @@
         "text-field": ["get", "vt_depth"]
       },
       "paint": {
-        "text-color": "rgba(0,0,0,1)"
+        "text-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -210,7 +210,7 @@
       "source": "v",
       "source-layer": "TpgphLine",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -221,7 +221,7 @@
       "source-layer": "WStrA",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -236,7 +236,7 @@
         ["in", ["get", "vt_flag17"], ["literal", [0, 1]]]
       ],
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -248,7 +248,7 @@
       "minzoom": 17,
       "filter": ["in", ["get", "vt_flag17"], ["literal", [1, 2]]],
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -259,7 +259,7 @@
       "source-layer": "RdCL",
       "maxzoom": 17,
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -271,7 +271,7 @@
       "minzoom": 17,
       "filter": ["all", ["in", ["get", "vt_flag17"], ["literal", [1, 2]]]],
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -282,7 +282,7 @@
       "source": "v",
       "source-layer": "RailCL",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -294,7 +294,7 @@
       "source-layer": "RailCL",
       "filter": ["all", ["in", ["get", "vt_flag17"], ["literal", [1, 2]]]],
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -304,7 +304,7 @@
       "source": "v",
       "source-layer": "BldA",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -315,7 +315,7 @@
       "source-layer": "UndergroundStation",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -325,7 +325,7 @@
       "source": "v",
       "source-layer": "RdEdg",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -336,7 +336,7 @@
       "source": "v",
       "source-layer": "RdCompt",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -350,7 +350,7 @@
         "line-sort-key": ["get", "vt_drworder"]
       },
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -360,7 +360,7 @@
       "source": "v",
       "source-layer": "SpcfArea",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -371,7 +371,7 @@
       "source-layer": "StrctArea",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,1)"
+        "fill-outline-color": "rgba(101,101,101,1)"
       }
     },
     {
@@ -380,7 +380,7 @@
       "source": "v",
       "source-layer": "StrctArea",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -391,7 +391,7 @@
       "source-layer": "StrctLine",
       "minzoom": 17,
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -402,7 +402,7 @@
       "source-layer": "TrfTnnlEnt",
       "minzoom": 17,
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -412,7 +412,7 @@
       "source": "v",
       "source-layer": "PwrTrnsmL",
       "paint": {
-        "line-color": "rgba(0,0,0,1)",
+        "line-color": "rgba(101,101,101,1)",
         "line-width": 1
       }
     },
@@ -748,7 +748,7 @@
           ["get", "vt_code"],
           [6368, 6376, 631, 632, 633, 661, 662],
           "rgba(0,0,0,0)",
-          "rgba(0,0,0,1)"
+          "rgba(101,101,101,1)"
         ]
       }
     },
@@ -777,7 +777,7 @@
           ["get", "vt_code"],
           [3201, 3204, 3212, 3213, 3214, 3215, 3216, 3217, 3218, 3243],
           "rgba(0,0,0,0)",
-          "rgba(0,0,0,1)"
+          "rgba(101,101,101,1)"
         ]
       }
     },
@@ -796,7 +796,7 @@
         "text-writing-mode": ["horizontal"]
       },
       "paint": {
-        "text-color": "rgba(0,0,0,1)"
+        "text-color": "rgba(101,101,101,1)"
       }
     }
   ]
